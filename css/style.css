@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(to right top, #000000, #111010, #1b191a, #252323, #302c2d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand{
+    text-align: center;
+    font-size: 80px;
+    background-image: linear-gradient(to bottom,black,red, black);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+.navbar{
+    background-image: linear-gradient(to right top, #434548, #4e4e53, #5b575e, #696167, #786a6e);
+}
+.card {
+    width: 228px;
+    height: 300px;
+    position: relative !important;
+    cursor: pointer;
+    background-color: rgba(62, 54, 43, 0.8) !important;
+}
+
+.card .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px;
+    transition: all .4s;
+}
+
+.card .content a {
+    padding: 0.3em 1.5em;
+}
+
+.card:hover .content {
+    color: rgb(255, 255, 255);
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transition: all .4s;
+}
+
+.card::before {
+    top: 0px;
+    right: 0px;
+}
+.card::after {
+    bottom: 0px;
+    left: 0px;
+}
+.card:hover::before {
+    width: 35px;
+    height: 35px;
+    transform: translate(12px, -12px);
+    border-radius: 50%;
+}
+
+.card:hover::after {
+    width: 35px;
+    height: 35px;
+    transform: translate(-12px, 12px);
+    border-radius: 50%;
+}
+
+.Mitsubishi{
+    color: #FF0000;
+}
+.BMW{
+    color: #FF0000;
+}
+.Toyota{
+    color: #FF0000;
+}
+.Lamborghini{
+    color: #FF0000;
+}
+.Nissan{
+    color: #FF0000;
+}
